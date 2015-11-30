@@ -1,6 +1,6 @@
 # telegram-bot
 
-A Servant based Haskell wrapper for the Telegram Bot API.
+A Servant based Haskell wrapper for the [Telegram Bot API](https://core.telegram.org/bots/api).
 
 It's pretty neat.
 
