@@ -5,6 +5,8 @@
 
 module Network.TelegramBot where
 
+import BotToken -- apiToken :: String
+
 import Network.TelegramBot.Common
 import Network.TelegramBot.Types
 import Network.TelegramBot.Methods
@@ -30,9 +32,6 @@ import qualified Data.Text.IO as T
 import Servant.API
 import Servant.Client
 import Servant.Common.Req
-
-apiToken :: String
-apiToken = "118862716:AAHrLNzojDJw47Lf6U_6n1GF2Aeexy17m0w"
 
 type BotAPI =
        "getUpdates" :> ReqBody '[JSON] GetUpdatesM :> Post '[JSON] (Response [Update])
